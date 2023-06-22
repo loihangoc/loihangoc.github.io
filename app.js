@@ -40,7 +40,7 @@ function animateImages(){
 
   images.forEach((image, idx) => {
     intersectionRatioValue = ratio - (idx * 0.7);
-    setTransform(image, `translateX(${intersectionRatioValue * 70}px)`)
+    setTransform(image, `translateX(${intersectionRatioValue * 90}px)`)
   })
 }
 
