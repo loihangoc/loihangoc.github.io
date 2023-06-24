@@ -28,7 +28,7 @@ function init(){
 
 function animate(){
   current = parseFloat(lerp(current, target, ease)).toFixed(2);
-  target = window.scrollY;
+  target = window.scrollY / 2;
   setTransform(slider[0], `translateX(-${current}px`)
   animateImages();
   requestAnimationFrame(animate);
@@ -46,7 +46,3 @@ function animateImages(){
 
 init();
 animate();
-
-console.log(sliderWidth);
-
-console.log(imageWidth);
